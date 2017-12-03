@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.navbar {
+    .navbar-menu{
+        &.is-active{
+            height: 100vh;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: #42ab79;
+        font: 600 12px open sans,helvetica,arial;
+        margin-right: 20px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        position: relative;
+        padding: 2px 4px;
+    }
+    .navbar-brand{
+        a {
+            text-transform: lowercase;
+        }
+    }
+}
