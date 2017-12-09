@@ -2,3 +2,8 @@ theme="journey"
 languageCode = "en-us"
 title = "midhun"
 baseurl = "http://midhunkrishna.in"
+[blackfriday]
+  angledQuotes = true
+  fractions = false
+  plainIDAnchors = true
+  extensions = ["hardLineBreak", "fencedCode"]

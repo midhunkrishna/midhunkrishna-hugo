@@ -22,9 +22,7 @@ gulp.task("images", function () {
 
   del(["themes/journey/static/images/**/*"]);
   gulp.src("src/images/**/*")
-    .pipe(hash())
     .pipe(gulp.dest("themes/journey/static/images"))
-    .pipe(hash.manifest("hash.json"))
     .pipe(gulp.dest("data/images"));
 });
 

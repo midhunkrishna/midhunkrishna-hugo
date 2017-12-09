@@ -4,12 +4,17 @@
   <body class="flow-text">
     {{ partial "navbar.html" . }}
 
-    {{ range first 10 .Data.Pages }}
-    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-    {{ end }}
-
-
-
+    <div class="loop section">
+      <div class="container">
+        <div class="container">
+          {{ range first 10 .Data.Pages }}
+          <span>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </span>
+          {{ end }}
+        </div>
+      </div>
+    </div>
 
     {{ partial "footer.html" . }}
   </body>
