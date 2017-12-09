@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
   {{ partial "header.html" . }}
-  <body class="flow-text">
+  <body class="flow-text index">
     {{ partial "navbar.html" . }}
 
     <div class="loop section">
       <div class="container">
-        <div class="container">
-          {{ range first 10 .Data.Pages }}
-          <span>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-          </span>
-          {{ end }}
+
+        <div class="columns is-vcentered">
+
+          <div class="column">
+            <h1>
+              I write code
+              <span class="blinking-cursor">|</span>
+            </h1>
+          </div>
+
+          <div class="column">
+            {{ range first 10 .Data.Pages }}
+            <span>
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </span>
+            {{ end }}
+          </div>
+
         </div>
       </div>
     </div>
+
 
     {{ partial "footer.html" . }}
   </body>
