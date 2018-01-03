@@ -2,7 +2,6 @@ theme="journey"
 languageCode = "en-us"
 title = "midhun"
 baseurl = "http://midhunkrishna.in"
-publishDir = "docs"
 [blackfriday]
   angledQuotes = true
   fractions = false
