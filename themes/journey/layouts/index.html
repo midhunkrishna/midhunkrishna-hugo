@@ -8,23 +8,40 @@
       <div class="container">
 
         <div class="columns is-vcentered">
-
           <div class="column">
-            <h1>
-              I write code
-              <span class="blinking-cursor">|</span>
-            </h1>
-          </div>
+            <div class="hero-image">
+              <img class="circlify profile-image" src="/images/fourth_of_july.jpg">
+            </div>
 
-          <div class="column">
-            {{ range first 10 .Data.Pages }}
-            <span>
-              <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </span>
-            {{ end }}
-          </div>
+            <div class="block hero-description">
+              <h1 class="tk-museo heading">
+                I write software.
+              </h1>
 
+              <span class="tk-etica-display">
+                My name is Midhun Krishna. I am a full-stack developer. I recently wrote this.
+              </span>
+            </div>
+          </div>
         </div>
+
+        <!-- <div class="columns is-vcentered"> -->
+
+        <!--   <div class="column"> -->
+        <!--     <h1> -->
+        <!--       I write code -->
+        <!--       <span class="blinking-cursor">|</span> -->
+        <!--     </h1> -->
+        <!--   </div> -->
+
+        <!--   <div class="column"> -->
+        <!--     {{ range first 10 .Data.Pages }} -->
+        <!--     <span> -->
+        <!--       <a href="{{ .Permalink }}">{{ .Title }}</a> -->
+        <!--     </span> -->
+        <!--     {{ end }} -->
+        <!--   </div> -->
+
       </div>
     </div>
 

@@ -1,5 +1,9 @@
 @charset 'UTF-8';
 
+// 0. Utility
+@import
+  'utils/default';
+
 // 1. Configuration and helpers
 @import
   'abstracts/variables',
