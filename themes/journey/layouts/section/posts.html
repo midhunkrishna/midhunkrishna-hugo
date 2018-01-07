@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body class="flow-text">
+
+    hellooo
+    <div class="loop section">
+      <div class="container post">
+        <!-- ranges through each of the content files associated with a particular taxonomy term and renders the summary.html content view -->
+        {{ .Content }}
+        {{ range .Pages }}
+        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+        {{ end }}
+      </div>
+    </div>
+
+  </body>
+</html>
