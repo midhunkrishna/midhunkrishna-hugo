@@ -18,10 +18,16 @@
                 I write software.
               </h1>
 
-              <span class="tk-etica-display">
-                My name is Midhun Krishna. I am a full-stack developer. I recently wrote
-                <a href="{{ (index .Data.Pages 0).Permalink }}"> this </a>
-              </span>
+              <div style="font-size: xx-large;">
+                <span class="tk-etica-display">
+                  My name is Midhun Krishna. I am a full-stack developer.
+                </span>
+
+                <span class="tk-etica-display">
+                  Recently I wrote
+                  about <a href="{{ (index .Data.Pages 0).Permalink }}"> {{ (index .Data.Pages 0).Title}}. </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>

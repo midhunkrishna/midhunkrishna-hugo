@@ -86,4 +86,28 @@ h1 {
         }
     }
 
+    .content-body{
+        a{
+            color: #111;
+            text-decoration: none;
+            border-bottom: 2px solid rgba(229, 0, 80, 0.7);
+
+            &:hover{
+                border-color: transparent;
+            }
+        }
+
+        h2{
+            font-size: 28px;
+            font-weight: bold;
+            font-family: "museo", serif;
+            margin-top: 60px;
+            margin-bottom: 20px;
+        }
+
+        ul{
+            margin-left: 20px;
+            list-style: square;
+        }
+    }
 }
