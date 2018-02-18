@@ -2,6 +2,10 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
+.hero{
+    margin-top: 5px;
+}
+
 .hero-image {
     margin: 0 auto;
     text-align: center;
@@ -16,6 +20,10 @@
 }
 
 @media only screen and (min-width: 600px) {
+    .hero{
+        margin-top: 60px;
+    }
+
     .hero-image {
         float: left;
         width: 170px;
@@ -28,7 +36,6 @@
         text-align: left;
 
         h1 {
-            font-size: 32px;
             margin-top: 92px;
             text-transform: none;
         }

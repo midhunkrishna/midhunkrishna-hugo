@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <body class="flow-text">
+  {{ partial "header.html" . }}
 
-    hellooo
+  <body class="flow-text">
+    {{ partial "navbar.html" . }}
+
     <div class="loop section">
       <div class="container post">
         <!-- ranges through each of the content files associated with a particular taxonomy term and renders the summary.html content view -->

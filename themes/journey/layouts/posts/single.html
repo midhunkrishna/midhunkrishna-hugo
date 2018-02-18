@@ -4,9 +4,15 @@
   <body class="flow-text">
     {{ partial "navbar.html" . }}
 
-    <div class="loop section">
+    <div class="loop section content-item">
       <div class="container post">
-        <h1>{{ .Title }}</h1>
+        <div class="tk-museo heading">
+          <h1 class="flexi-h1">{{ .Title }}</h1>
+          <div class="companion">
+            {{ .Description }}
+          </div>
+        </div>
+
         {{ .Content }}
       </div>
     </div>

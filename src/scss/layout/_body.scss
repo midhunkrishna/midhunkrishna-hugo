@@ -1,5 +1,7 @@
 html {
+    -webkit-font-smoothing: antialiased;
 }
+
 .loop {
     margin-top: 40px;
 }
@@ -16,68 +18,72 @@ h1 {
     color: #e50050;
 }
 
-.container.post{
-    width: 70%;
-    margin-left: 0%;
-    p{
-        margin: 19px;
+
+.content-section{
+    p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .heading{
+        h1 {
+            margin-top: 60px;
+            color: #111;
+            text-align: center;
+        }
+
+        .companion {
+            color: #888;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+
+    .items{
+        .year{
+            font-size: 30px !important;
+            font: 700 18px Open Sans,sans-serif;
+            color: #aaa;
+            margin: 50px auto 10px;
+            text-transform: uppercase;
+        }
+
+        .date{
+            font-size: 20px !important;
+            color: #999;
+            font: 14px Open Sans,sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 32px;
+        }
+
+        .title{
+            text-transform: capitalize;
+            font-size: 24px;
+        }
     }
 }
 
 
-.blinking-cursor {
-  font-weight: 100;
-  font-size: 30px;
-  color: #2E3D48;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
-  vertical-align: text-top;
-}
+.content-item{
+    p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
-@keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
-}
+    .heading{
+        margin-bottom: 60px;
+        h1 {
+            margin-top: 60px;
+            text-align: center;
+            text-transform: capitalize;
+        }
 
-@-moz-keyframes blink {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
-}
+        .companion {
+            color: #888;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
 
-@-webkit-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
-}
-
-@-ms-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
-}
-
-@-o-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
 }

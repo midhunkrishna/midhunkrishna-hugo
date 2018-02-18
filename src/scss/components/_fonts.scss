@@ -17,3 +17,23 @@ html {
   font-family: Biko;
   src:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/biko-black.woff");
 }
+
+.flexi-h1{
+    text-transform: none;
+    letter-spacing: -.2px;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+@media only screen and (min-width: 600px) {
+    .flexi-h1 {
+        font-size: 38px !important;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .flexi-h1 {
+        font-size: 48px !important;
+    }
+}

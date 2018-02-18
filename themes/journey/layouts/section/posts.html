@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <body class="flow-text">
+  {{ partial "header.html" . }}
 
-    hellooo
-    <div class="loop section">
+  <body class="flow-text">
+    {{ partial "navbar.html" . }}
+
+    <div class="loop content-section">
       <div class="container post">
-        <!-- ranges through each of the content files associated with a particular taxonomy term and renders the summary.html content view -->
-        {{ .Content }}
-        {{ range .Pages }}
-        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-        {{ end }}
+        <div class="column">
+          <div class="tk-museo heading">
+            <h1 class="flexi-h1">
+              an Ode to Code.
+            </h1>
+
+            <div class="companion">
+              {{ .Content }}
+            </div>
+          </div>
+          <!-- ranges through each of the content files associated with a particular taxonomy term and renders the summary.html content view -->
+
+          <div class="items">
+            {{ range ((where .Data.Pages "Type" "posts").GroupByDate "2006") }}
+              <div class="year"> {{ .Key }} </div>
+              {{ range .Pages}}
+                 <div class="columns">
+                   <div class="column is-one-fifth">
+                     <span class="date">{{ dateFormat "Monday, Jan 2" .Date }} </span>
+                   </div>
+                   <div class="column heading title">
+                     <span><a href="{{ .Permalink }}">{{ .Title }}</a></span>
+                   </div>
+                </div>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
       </div>
     </div>
 
+    {{ partial "footer.html" . }}
   </body>
 </html>

@@ -1,9 +1,11 @@
 theme="journey"
 languageCode = "en-us"
-title = "midhun"
+title = ""
 baseurl = "http://midhunkrishna.in"
 [blackfriday]
   angledQuotes = true
   fractions = false
   plainIDAnchors = true
-  extensions = ["hardLineBreak", "fencedCode"]
+  extensions = ["hardLineBreak"]
+[permalinks]
+  posts = "posts/:year/:month/:title/"
