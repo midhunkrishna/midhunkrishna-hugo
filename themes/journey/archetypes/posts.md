@@ -1,3 +1,4 @@
 +++
-type = "post"
+type = "posts"
+description = ""
 +++

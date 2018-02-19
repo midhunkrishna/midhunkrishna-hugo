@@ -66,11 +66,6 @@ h1 {
 
 
 .content-item{
-    p {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
     .heading{
         margin-bottom: 60px;
         h1 {
@@ -87,6 +82,15 @@ h1 {
     }
 
     .content-body{
+        p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 5px 0;
+            line-height: 1.9;
+            font-weight: 400;
+            color: #333;
+        }
+
         a{
             color: #111;
             text-decoration: none;
@@ -103,6 +107,7 @@ h1 {
             font-family: "museo", serif;
             margin-top: 60px;
             margin-bottom: 20px;
+            text-transform: capitalize;
         }
 
         ul{
