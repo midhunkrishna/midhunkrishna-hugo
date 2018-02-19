@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = ""
 baseurl = "http://midhunkrishna.in"
 publishDir = "../public"
+disqusShortname = "midhunkrishna"
 [blackfriday]
   angledQuotes = true
   fractions = false
