@@ -4,6 +4,9 @@ title = ""
 baseurl = "http://midhunkrishna.in"
 publishDir = "../public"
 disqusShortname = "midhunkrishna"
+PygmentsCodeFences = true
+PygmentsUseClasses = true
+
 [blackfriday]
   angledQuotes = true
   fractions = false
