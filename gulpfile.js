@@ -22,8 +22,7 @@ gulp.task("images", function () {
 
   del(["themes/journey/static/images/**/*"]);
   gulp.src("src/images/**/*")
-    .pipe(gulp.dest("themes/journey/static/images"))
-    .pipe(gulp.dest("data/images"));
+    .pipe(gulp.dest("themes/journey/static/images"));
 });
 
 // Compile SCSS files to CSS

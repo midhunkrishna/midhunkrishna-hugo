@@ -24,7 +24,7 @@ It seemed, validating routes and checking the packaging of cargos on each shipme
 
 It is often intimidating even to entertain the idea of working with threads. They can bring in complexity, unpredictable behaviors and the later arises due to a lack of thread-safe code. Ruby is a language of mutable references, it is often difficult to write 100% thread-safe code, hence I needed something which offered primitives and patterns that would guarantee thread safety.
 
-I checked {{< hyperlink text="Concurrent Ruby" url="https://github.com/ruby-concurrency/concurrent-ruby" >}} and {{< hyperlink text="Celluloid" url="https://github.com/celluloid/celluloid" >}} and decided to go with Concurrent Ruby since the application gemset had it (via Sidekiq)
+I checked {{<hyperlink text="Concurrent Ruby" url="https://github.com/ruby-concurrency/concurrent-ruby" >}} and {{<hyperlink text="Celluloid" url="https://github.com/celluloid/celluloid" >}} and decided to go with Concurrent Ruby since the application gemset had it (via Sidekiq)
 
 
 I decided to refactor this using {{< hyperlink url="https://github.com/ruby-concurrency/concurrent-ruby/blob/master/doc/future.md" text="Concurrent Ruby Futures." >}}. In general, using futures, one can perform an action atomically, in an asynchronous fashion, and then come back and collect the result of the action at a later time, and while collecting the result, the main thread blocks until the result of the action is available.
