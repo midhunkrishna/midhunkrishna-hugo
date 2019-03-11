@@ -1,0 +1,13 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  template: template0
+  pool: 300
+  username: postgres
+  password: postgres
+  url: postgresql://localhost/
+
+development:
+  <<: *default
+  database: postbuilder_dev
+
