@@ -23,6 +23,10 @@
     "gulp-autoprefixer": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-hash": "^4.1.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "@rails/webpacker": "^4.0.2"
   }
 }
